@@ -1,7 +1,7 @@
 {
-  "name": "lundkvist-react",
+  "name": "brewapp",
   "version": "1.0.0",
-  "description": "Per testar React",
+  "description": "Brewapp will help you out with your home beer brewing",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
