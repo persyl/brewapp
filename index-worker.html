@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Per Lundkvist at GitHub!</title>
+</head>
+
+<body>
+    <div id="output"></div>
+    <script type="text/javascript">
+    var op = document.getElementById('output');
+    if (window.Worker) {
+        op.innerHTML = 'WebWorker is supported.';
+
+        //Create a Worker and send a message to it
+        var ww = new Worker('worker.js');
+        ww.onmessage = function(e){
+        	var msg = e.data;
+        	op.innerHTML = msg;
+        };
+        ww.postMessage('Hello');
+
+
+    } else {
+        op.innerHTML = 'WebWorker is not supported.';
+    }
+    </script>
+</body>
+
+</html>
