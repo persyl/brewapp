@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Brewapp will help you out with your home beer brewing",
   "main": "index.js",
+  "homepage": "https://persyl.github.io/brewapp",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy" : "webpack && gh-pages -d /"
   },
   "author": "Per Lundkvist",
   "license": "ISC",
